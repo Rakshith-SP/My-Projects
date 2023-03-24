@@ -1,12 +1,12 @@
 - Implementation of sorting algorithms.
 - Sort algorithms implemented are:
-  - Comparison sorts:
-    - Bubble sort
-    - Selection sort
-    - Insetion sort
-    - Merge sort
-    - Quick sort
-  - Non-Comparison sorts:
-    - Counting sort
-    - Bucket sort
-    - Radix sort
+- Comparison sorts:
+  1. Bubble sort
+  2. Selection sort
+  3. Insetion sort
+  4. Merge sort
+  5. Quick sort
+- Non-Comparison sorts:
+  1. Counting sort
+  2. Bucket sort
+  3. Radix sort
