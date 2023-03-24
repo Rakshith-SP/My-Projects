@@ -160,14 +160,6 @@ public class Tree {
 
     public boolean isPerfect() {
         return size() == (Math.pow(2, height() + 1) - 1);
-        /* // my solution
-        int perfectSize = getPerfectSize(height());
-        int currentSize = size();
-        return (perfectSize == currentSize);
-                        // a method
-        private int getPerfectSize(int height) {
-        if (height == 0) return 0;
-        return (getPerfectSize(height-1)*2) + 1;}*/
     }
 
     private void traversePreOrder(Node root) {
@@ -230,20 +222,6 @@ public class Tree {
         }
 
         return false;
-
-        /* // my solution
-        if (node1!=null && node2!=null) {
-            if (node1.value == node2.value) {
-                if (isLeaf(node1) && isLeaf(node2))
-                    return true;
-                if (node1.leftChild != null && node2.leftChild != null)
-                    return areNodesEqual(node1.leftChild, node2.leftChild);
-                if (node1.rightChild != null && node2.rightChild != null)
-                    return areNodesEqual(node1.rightChild, node2.rightChild);
-            }
-            else return false;
-        }
-        return false;*/
     }
     private boolean isBinarySearchTree(Node node, int min, int max) {
         if (node == null)
@@ -253,14 +231,6 @@ public class Tree {
             return isBinarySearchTree(node.leftChild, min, node.value)
                     && isBinarySearchTree(node.rightChild, node.value, max);
         return false;
-
-        /* Mosh's solution
-        if (rootNode == null)
-            return true;
-        if (rootNode.value < min || rootNode.value > max)
-            return false;
-        return isBinarySearchTree(rootNode.leftChild, min, rootNode.value - 1)
-                && isBinarySearchTree(rootNode.rightChild, rootNode.value + 1, max);*/
     }
     private void getNodesAtDistance(Node node, int distance, ArrayList<Integer> list) {
         if (node == null)
@@ -374,29 +344,6 @@ public class Tree {
 
         return null;
     }
-    /* // mosh's solution - makes more sense
-    private boolean getAncestors(Node root, int value, List<Integer> list) {
-    // We should traverse the tree until we find the target value. If
-    // find the target value, we return true without adding the current node
-    // to the list; otherwise, if we ask for ancestors of 5, 5 will be also
-    // added to the list.
-    if (root == null)
-      return false;
-
-    if (root.value == value)
-      return true;
-
-    // If we find the target value in the left or right sub-trees, that means
-    // the current node (root) is one of the ancestors. So we add it to the list.
-    if (getAncestors(root.leftChild, value, list) ||
-        getAncestors(root.rightChild, value, list)) {
-      list.add(root.value);
-      return true;
-    }
-
-    return false;
-  }
-    */
     private boolean isBalanced(Node node) {
         if (node == null)
             return true;
