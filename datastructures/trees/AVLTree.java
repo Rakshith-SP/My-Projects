@@ -70,24 +70,6 @@ public class AVLTree {
         return newRoot;
     }
 
-    /* my solution, but doesn't do well in calculating height
-    private void insert(AVLNode node, int value){
-        if (value < node.value) {
-            if (node.leftChild == null) {
-                node.leftChild = new AVLNode(value);
-                return;
-            }
-            insert(node.leftChild, value);
-        }
-        if (value > node.value) {
-            if (node.rightChild == null) {
-                node.rightChild = new AVLNode(value);
-                return;
-            }
-            insert(node.rightChild, value);
-        }
-    }*/
-
     private int getHeight(AVLNode node) {
         if (node == null)
             return -1;
