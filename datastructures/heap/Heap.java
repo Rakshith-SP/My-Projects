@@ -1,5 +1,3 @@
-// The edge cases need to be tested properly
-
 package projects.exercise.datastructures.heap;
 
 import java.util.Arrays;
