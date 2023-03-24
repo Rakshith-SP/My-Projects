@@ -53,19 +53,6 @@ public class ArrayQueue {
         }
 
         return result;
-
-        /* my previous solution
-        if (rearPointer <= frontPointer && count != 0) {
-            int[] array1 = Arrays.copyOfRange(array, frontPointer, array.length);
-            int[] array2 = Arrays.copyOfRange(array, 0, rearPointer);
-
-            int[] result = new int[array1.length+ array2.length];
-            System.arraycopy(array1, 0, result, 0, array1.length);
-            System.arraycopy(array2, 0, result, array1.length, array2.length);
-
-            return result;
-        }
-        return Arrays.copyOfRange(array, frontPointer, rearPointer);*/
     }
 
     public int size() {
