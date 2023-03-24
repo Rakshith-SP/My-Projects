@@ -1,0 +1,8 @@
+- Implementation of all the search algorithms is in one file.
+- Search algorithms implemented are:-
+  - Linear search
+  - Binary search (recursive)
+  - Binary search (iterative)
+  - Ternary search (just for demo)
+  - Jump search
+  - Exponential search
