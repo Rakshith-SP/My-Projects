@@ -1,2 +1,2 @@
 # My-Projects
-Showcasing my interests in Tech
+Records of all the projects i have done
