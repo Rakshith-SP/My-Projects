@@ -205,20 +205,3 @@ public class Graph {
         return stringBuilder.toString();
     }
 }
-
-/*
-Node targetNode = null;
-for (Node node : clients.keySet()) {
-    if (node.label.equals(client))
-        targetNode = node;
-}
-
-if (targetNode == null)
-    return;
-
-int clientIndex = clients.get(targetNode);
-connections.remove(clientIndex);
-
-for (List<Node> list : connections.values()) {
-    list.remove(targetNode);
-        }*/
