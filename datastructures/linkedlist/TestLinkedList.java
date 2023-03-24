@@ -1,4 +1,4 @@
-// This is to test the addFirst and addLast methods. There are 12 scenarios for
+// This is to test the addFirst and addLast methods
 
 package projects.exercise.datastructures.linkedlist;
 
