@@ -10,16 +10,6 @@ public class Array {
     }
 
     public void insert(int item) {
-/*        if (array.length == lastItemIndex + 1) {
-            int[] newItems = new int[lastItemIndex * 2];
-
-            for (int i = 0; i < lastItemIndex + 1; i++)
-                newItems[i] = array[i];
-
-            array = newItems;
-        }
-        array[lastItemIndex++] = item;
-    }*/
         lastItemIndex++;
         try {
             array[lastItemIndex] = item;
@@ -36,12 +26,6 @@ public class Array {
     public void removeAt(int index) {
         if (index > lastItemIndex || index < 0) {
             throw new RuntimeException("Not possible");
-        }
-
-//        for (int i = index+1; i <= lastItemIndex; i++) {
-//            array[i] = array[i+1];
-//            lastItemIndex--;
-//        }
 
         int j=0;
         int[] tempArray = new int[array.length-1];
