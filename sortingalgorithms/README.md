@@ -9,4 +9,3 @@
 - Non-Comparison sorts:
   1. Counting sort
   2. Bucket sort
-  3. Radix sort
