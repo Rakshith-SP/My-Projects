@@ -1,2 +1,2 @@
-- This section is dedicated only for data structures.
-- Each data structre have its implementation and the various methods availabe for its user.
+- Implementation of various data structures
+- Various methods for the better use of the data structure can be found
