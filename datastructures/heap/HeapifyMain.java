@@ -6,8 +6,6 @@ public class HeapifyMain {
     private static int moves = 0;
 
     public static void main(String[] args) {
-        // 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
-        // 5, 3, 8, 4, 1, 2
         int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         heapify(numbers);
         System.out.println(Arrays.toString(numbers));
@@ -20,7 +18,6 @@ public class HeapifyMain {
         for (int i = numbers.length - 1; i >= 0; i--) {
             bubbleDown(i, numbers);
             bubbleUp(i, numbers);
-            // heapify(i, numbers); // mosh solution
         }
     }
 
