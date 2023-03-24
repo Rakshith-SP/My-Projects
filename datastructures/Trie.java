@@ -92,35 +92,6 @@ public class Trie {
 
         if (!child.hasAnyChild() && !child.isEndOfWord)
             root.removeChild(ch);
-
-        /* my solution to remove
-public void remove(String word) {
-        if (word == null)
-            throw new IllegalStateException();
-
-        traverse(rootNode, word.toCharArray(), 0);
-    }
-
-private boolean traverse(Node root, char[] charArray, int count) {
-        for (Node child : root.getChildren()) {
-            if (count < charArray.length && charArray[count] == child.value) {
-                var toRemove = traverse(child, charArray, ++count);
-                if (toRemove) {
-                    if (!child.hasAnyChild() && !child.isEndOfWord) {
-                        root.removeChild(charArray[count-1]);
-                        return true;
-                    }
-                }
-                return false;
-            }
-        }
-        if (count == charArray.length) {
-            root.isEndOfWord = false;
-            return true;
-        }
-        return false;
-    }
-*/
     }
 
     public List<String> findWords(String prefix) {
@@ -160,15 +131,6 @@ private boolean traverse(Node root, char[] charArray, int count) {
             currStr = currStr.substring(0, currStr.length() - 1);
         }
         return wordsList;
-
-        /* mosh's implementation
-    private void findWords(Node root, String prefix, List<String> wordsList) {
-    if (root.isEndOfWord)
-        words.add(prefix);
-    for(Node child : root.getChildren())
-        findWords(child, prefix + child.value, wordsList);
-    }
-    */
     }
 
     public boolean containsRecursive(String word) {
