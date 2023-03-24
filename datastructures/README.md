@@ -1,2 +1,4 @@
-- Implementation of various data structures
-- Various methods for the better use of the data structure can be found
+- Implementation of various data structures.
+- Implemented from the scratch using Java.
+- Various methods for the better use of the data structure is implemented.
+- Note that the code is only for demonstration purpose and it needs to be changed for it to run. The only changes is the package definition and any reference to the data structure of my implementation in other files.
